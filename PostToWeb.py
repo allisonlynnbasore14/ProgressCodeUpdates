@@ -22,15 +22,17 @@ def wrapStringInHTML(program, body):
     open_new_tab(filename)
 
 def uploadToGit():
+    # curl -i https://api.github.com -u valid_username:valid_password
 	from git import Repo
 
-	repo_dir = 'mathematics'
+	repo_dir = ''
 	repo = Repo(repo_dir)
+    #assert not repo.bare
 	file_list = [
-	    'numerical_analysis/regression_analysis/simple_regression_analysis.py',
-	    'numerical_analysis/regression_analysis/simple_regression_analysis.png'
+	    'UpdatedCodes.html',
+        'PostToWeb.py'
 	]
-	commit_message = 'Add simple regression analysis'
+	commit_message = 'Updated Codes Daily '
 	repo.index.add(file_list)
 	repo.index.commit(commit_message)
 	origin = repo.remote('origin')
@@ -45,3 +47,4 @@ for s in text:
     outstring += str(s)
     outstring += "<br />"
 wrapStringInHTML("UpdatedCodes", outstring)
+uploadToGit()
