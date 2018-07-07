@@ -46,5 +46,5 @@ outstring = ""
 for s in text:
     outstring += str(s)
     outstring += "<br />"
-wrapStringInHTML("UpdatedCodes", outstring)
+wrapStringInHTML("docs/index", outstring)
 uploadToGit()
