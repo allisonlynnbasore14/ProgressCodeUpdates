@@ -32,7 +32,7 @@ def uploadToGit():
 	    'docs/index.html',
         'PostToWeb.py'
 	]
-	commit_message = 'Updated Codes Daily '
+	commit_message = 'Updated Codes To Web Daily'
 	repo.index.add(file_list)
 	repo.index.commit(commit_message)
 	origin = repo.remote('origin')
