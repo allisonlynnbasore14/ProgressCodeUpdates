@@ -29,7 +29,7 @@ def uploadToGit():
 	repo = Repo(repo_dir)
     #assert not repo.bare
 	file_list = [
-	    'UpdatedCodes.html',
+	    'docs/index.html',
         'PostToWeb.py'
 	]
 	commit_message = 'Updated Codes Daily '
@@ -39,7 +39,7 @@ def uploadToGit():
 	origin.push()
 
 
-text = 'TESTING TESTING' # webPageToText(url)
+text = 'Yellow Cats' # webPageToText(url)
 
 # compile dictionary into string and wrap with HTML
 outstring = ""
