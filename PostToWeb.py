@@ -19,7 +19,7 @@ def wrapStringInHTML(program, body):
     f.write(whole)
     f.close()
 
-    open_new_tab(filename)
+    #open_new_tab(filename)
 
 def uploadToGit():
     # curl -i https://api.github.com -u valid_username:valid_password
