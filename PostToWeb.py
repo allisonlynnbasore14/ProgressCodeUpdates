@@ -39,12 +39,12 @@ def uploadToGit():
 	origin.push()
 
 
-text = 'Yellow Cats' # webPageToText(url)
+#text = 'Yellow Cats' # webPageToText(url)
 
 # compile dictionary into string and wrap with HTML
-outstring = ""
-for s in text:
-    outstring += str(s)
-    outstring += "<br />"
-wrapStringInHTML("docs/index", outstring)
-uploadToGit()
+#outstring = ""
+#for s in text:
+ #   outstring += str(s)
+  #  outstring += "<br />"
+#wrapStringInHTML("docs/index", outstring)
+#uploadToGit()
